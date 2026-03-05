@@ -109,11 +109,29 @@
 # print(next(series))
 # print(next(series))
 # ------------------------------------------------------------------------------------------------
-user_input = int(input("enter number upto which u want to print fibonacci : "))
-def generate_fib_series():
-    a,b = 0,1
-    while a<=user_input:
-        yield a
-        a, b = a + b, a
+# user_input = int(input("enter number upto which u want to print fibonacci : "))
+# def generate_fib_series():
+#     a,b = 0,1
+#     while a<=user_input:
+#         yield a
+#         a, b = a + b, a
+#
+# generate_series()
 
-generate_series()
+# Following data displays min/max/average temp for cities
+weather= [{'Mumbai' : [28, 30, 32]},
+          {'Pune':[34,35,26]},
+          {'Nashik': [24, 25, 27]}]
+#
+# 1. Print the weather data
+print(weather)
+
+# 2. Print the city with maximum/min temp
+# print(max(weather,key=lambda item: max(list(item.values())[0])))
+# print(min(weather,key=lambda item: min(list(item.values())[0])))
+#
+# map
+
+# -----------------------------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------
+
