@@ -21,6 +21,7 @@ Students(5,"Elephant",[46,76,65])]
 ## give roll no. and it will print gpa
 roll_no = int(input("Enter roll number: "))
 ## op = [print(f"GPA of {i}= {i.calculate_gpa()}") for i in student if i.roll_no==roll_no] # list comprehension:
+op =[print(s) for s in student if s.roll_no==roll_no]
 # for s in student:
 #         if s.roll_no==roll_no:
 #             print(s)
@@ -31,7 +32,7 @@ roll_no = int(input("Enter roll number: "))
 #     print(f"student = {i.student_name},GPA = {i.calculate_gpa()}")
 
 
-
+# student.sort(student key = lambda)
 
 
 
@@ -47,7 +48,6 @@ C. Print student data for given id.
 D. Calculate GPA()
 gpa=(1/3)*m1+(1/2)*m2+(1/4)*m3
 # -----------------------------------------------------------------------------
-
 Create 5 student objects and store them in a list
 For the student data stored in the list perform following operation:
 1. Display All Student
