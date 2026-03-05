@@ -5,3 +5,10 @@ git remote remove origin
 git remote add origin https://github.com/pratiksha189/PYTHON.git
 
 Verify it worked with git remote -v—you should see your GitHub repo URL listed for origin
+
+
+how to push code :
+git init
+git add .
+git commit -m "Your commit message"
+git push -u origin main
