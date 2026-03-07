@@ -1,4 +1,4 @@
-from EmployeePortal import (Employee, SalariedEmployee, Manager)
+from DAYS.DAY6.EmployeePortal import (Employee, SalariedEmployee, Manager)
 class Payroll:
     @staticmethod
     def display_gross(employee:Employee):
