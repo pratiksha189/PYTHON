@@ -9,6 +9,11 @@
 #     ]
 # }
 # num=print(data["store_a"][0]["price"])
-mylist = ['apple', 'banana', 'cherry']
-mylist[1:2] = ['kiwi', 'mango']
-print(mylist)
+# mylist = ['apple', 'banana', 'cherry']
+# mylist[1:2] = ['kiwi', 'mango']
+# print(mylist)
+
+# even print
+# l1 = [1,6,23,8,47,86,36,9]
+# num=[x for x in l1 if x%2==1]
+# print(num)
