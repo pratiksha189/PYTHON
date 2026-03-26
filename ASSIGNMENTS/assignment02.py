@@ -7,23 +7,27 @@ for example, here is the output for a 30 day month that begins on day 4(THURSDAY
                   1   2   3   4
     5    6   7    8   9   10  11
 
+
 """
 from operator import index
 
-# total_days = int(input("How many days are in a month: "))
-# first_day_name = input("What day of the week the month begins: ").upper()
-#
-# list1 = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
-# start_pos = list1.index(first_day_name)
-# print(" M  T  W  T  F  S  S")
-#
-# for i in range(start_pos):
-#     print("  ", end=" ")
-#
-# for i in range(1, total_days + 1):
-#     print(f"{i:2}", end=" ")
-#     if (i + start_pos) % 7 == 0:
-#         print()
+total_days = int(input("How many days are in a month: "))
+first_day_name = input("What day of the week the month begins: ").upper()
+
+list1 = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
+start_pos = list1.index(first_day_name)
+print(" M  T  W  T  F  S  S")
+
+for i in range(start_pos):
+    print("  ", end=" ")
+
+for i in range(1, total_days + 1):
+    print(f"{i:2}", end=" ")
+    if (i + start_pos) % 7 == 0:
+        print()
+
+
+
 
 # ---------------------------------------------------------------------------
 '''
@@ -39,24 +43,40 @@ QUESTION 2: CHECK IF ALL LETTERS ARE UPPERCASE
 #     print(f"False")
 # else:
 #     print(f"True")
+
+
+
+# mystr=input("enter your string")
+# isupper=True
+# for i in mystr:
+#     if 65>ord(i) and ord(i)<90:
+#         continue
+#     else:
+#         isupper=False
+#         break
+# if isupper==False:
+#     print("is not in uppercase")
+#
+# else:
+#     print("is in uppercase")
 # ---------------------------------------------------------------------------
 # '''
 # QUESTION3. PALINDROME
 #  '''
-import re
-
-text = input("ENTER ANY STRING TO CHECK IF IT IS A PALINDROME: ")
-
-cleaned_text = re.sub(r'[^a-zA-Z0-9]', '', text.lower())
-
-reversed_text = cleaned_text[::-1]
-
-if cleaned_text == reversed_text:
-    print("THE GIVEN STRING IS A PALINDROME")
-else:
-    print("THE GIVEN STRING IS NOT A PALINDROME")
-
-print(f"Cleaned text: '{cleaned_text}'")
+# import re
+#
+# text = input("ENTER ANY STRING TO CHECK IF IT IS A PALINDROME: ")
+#
+# cleaned_text = re.sub(r'[^a-zA-Z0-9]', '', text.lower())
+#
+# reversed_text = cleaned_text[::-1]
+#
+# if cleaned_text == reversed_text:
+#     print("THE GIVEN STRING IS A PALINDROME")
+# else:
+#     print("THE GIVEN STRING IS NOT A PALINDROME")
+#
+# print(f"Cleaned text: '{cleaned_text}'")
 
 # -------------------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------------------
@@ -97,45 +117,45 @@ print(f"Cleaned text: '{cleaned_text}'")
 
 # W
 words=['cat','bat','rat','sat','pat']
-# for word in words:
-#     print(word)
-# print(len(words))
-# print('cat'in words)
-# print('mat'not in words)
+for word in words:
+    print(word)
+print(len(words))
+print('cat'in words)
+print('mat'not in words)
 
 # --------------slicing -----------
-# print(words[4])
-# print(words[-3])
-# # print(words[5])
-# print(words[2:4])
-# print(words[1:4:2])
-# print(words[1:4:-2])
+print(words[4])
+print(words[-3])
+# print(words[5])
+print(words[2:4])
+print(words[1:4:2])
+print(words[1:4:-2])
 # -----------------methods-------------------
-# words.append('mat')
-# print(words)
-# words.remove('mat')
-# print(words)
-# words.insert(2,'pat')
-# print(words)
-# index=words.index('sat')
-# print(index)
-# words.sort()
-# print(words)
-# lst=['pat','chat']
-# lst.append(words)
-# print(lst)
-# words.pop(3)
-# print(words)
-# words.reverse()
-# print(words)
-# words=['cat','bat','rat','sat','pat']
-# for word in words:
-#     if isinstance(word,list):
-#          for item in word:
-#              print(item)
-#     else:
-#         print(word)
-# for index ,j in enumerate(words, start=5):
-#     print(index,'',j)
+words.append('mat')
+print(words)
+words.remove('mat')
+print(words)
+words.insert(2,'pat')
+print(words)
+index=words.index('sat')
+print(index)
+words.sort()
+print(words)
+lst=['pat','chat']
+lst.append(words)
+print(lst)
+words.pop(3)
+print(words)
+words.reverse()
+print(words)
+words=['cat','bat','rat','sat','pat']
+for word in words:
+    if isinstance(word,list):
+         for item in word:
+             print(item)
+    else:
+        print(word)
+for index ,j in enumerate(words, start=5):
+    print(index,'',j)
 
 
