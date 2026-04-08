@@ -3,6 +3,10 @@ the same name until you address the existing one.
 
 git remote remove origin
 git remote add origin https://github.com/pratiksha189/PYTHON.git
+https://github.com/pratiksha189/Java.git
+git pull origin master
+git push -u origin master
+
 
 Verify it worked with git remote -v—you should see your GitHub repo URL listed for origin
 
